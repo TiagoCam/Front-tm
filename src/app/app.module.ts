@@ -18,6 +18,8 @@ import { MatTableModule } from '@angular/material/table';
 import { AgendarComponent } from './pages/agendar/agendar.component';
 import { AgendadosComponent } from './pages/agendados/agendados.component';
 import { HomeComponent } from './pages/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { HomeComponent } from './pages/home/home.component';
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

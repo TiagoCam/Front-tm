@@ -23,9 +23,9 @@ export class HomeComponent {
       }
 
       return [
-        { title: 'Historico do Dia', cols: 1, rows: 1 },
-        { title: 'Historico', cols: 1, rows: 2 },
-        { title: 'Historico do Mês', cols: 1, rows: 1 },
+        { title: 'Histórico do Dia', cols: 1, rows: 1 },
+        { title: 'Histórico', cols: 1, rows: 2 },
+        { title: 'Histórico do Mês', cols: 1, rows: 1 },
 
       ];
     })

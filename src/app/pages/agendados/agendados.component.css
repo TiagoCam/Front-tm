@@ -1,0 +1,11 @@
+.grid-container {
+  margin: 20px;
+}
+
+.carregando-spinner {
+  display: flex;
+  align-items: denter;
+  justify-content: center;
+  margin-top: 150px;
+  height: 100%;
+}
