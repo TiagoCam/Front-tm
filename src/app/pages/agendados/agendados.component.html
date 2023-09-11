@@ -1,39 +1,78 @@
 <div class="grid-container">
 
-  <mat-toolbar color="primary">
-    <span>Agendados</span>
+  <mat-toolbar style="background-color: #008568;">
+    <span style="color: white;">Agendados</span>
   </mat-toolbar>
 
   <div *ngIf="agendados$ | async as agendados; else Carregando">
     <table mat-table [dataSource]="agendados" class="mat-elevation-z8">
+      <!-- _id -->
+      <!-- <ng-container matColumnDef="_id">
+        <th mat-header-cell *matHeaderCellDef>ID</th>
+        <td mat-cell *matCellDef="let agendados"> {{ agendados._id }} </td>
+      </ng-container> -->
+
       <!-- Conta Origem -->
       <ng-container matColumnDef="contaOrigem">
         <th mat-header-cell *matHeaderCellDef> Conta Origem </th>
         <td mat-cell *matCellDef="let agendados"> {{ agendados.contaOrigem }} </td>
       </ng-container>
 
-      <!-- Name Column -->
+      <!-- Conta Destino -->
       <ng-container matColumnDef="contaDestino">
         <th mat-header-cell *matHeaderCellDef> Conta Destino </th>
         <td mat-cell *matCellDef="let agendados"> {{ agendados.contaDestino }} </td>
       </ng-container>
 
-      <!-- Weight Column -->
+      <!-- Valor -->
       <ng-container matColumnDef="valor">
         <th mat-header-cell *matHeaderCellDef> Valor </th>
         <td mat-cell *matCellDef="let agendados"> {{ agendados.valor }} </td>
       </ng-container>
 
-      <!-- Symbol Column -->
-      <ng-container matColumnDef="dtTrans">
+      <!-- Data Transferência -->
+      <ng-container matColumnDef="dataTransfer">
         <th mat-header-cell *matHeaderCellDef> Data Transferência </th>
-        <td mat-cell *matCellDef="let agendados"> {{ agendados.dtTrans }} </td>
+        <td mat-cell *matCellDef="let agendados"> {{ agendados.dataTransfer}} </td>
       </ng-container>
 
-      <!-- Symbol Column -->
-      <ng-container matColumnDef="dtAgenda">
+      <!-- Data Agendada -->
+      <ng-container matColumnDef="dataRegistro">
         <th mat-header-cell *matHeaderCellDef> Data Agendada </th>
-        <td mat-cell *matCellDef="let agendados"> {{ agendados.dtAgenda }} </td>
+        <td mat-cell *matCellDef="let agendados"> {{ agendados.dataRegistro }} </td>
+      </ng-container>
+
+      <!-- Valor + Tava-->
+      <ng-container matColumnDef="valorTaxa">
+        <th mat-header-cell *matHeaderCellDef> Valor + Taxa </th>
+        <td mat-cell *matCellDef="let agendados"> {{ agendados.valorTaxa }} </td>
+      </ng-container>
+
+      <!-- Actions -->
+      <ng-container matColumnDef="actions">
+
+        <!-- <mat-header-cell *matHeaderCellDef class="adicionar">
+          <button mat-mini-fab color="primary" aria-label="Adicionar Transferência">
+            <a mat-list-item routerLink="/agendar"><mat-icon>add</mat-icon></a>
+          </button>
+        </mat-header-cell> -->
+
+        <mat-header-cell *matHeaderCellDef class="adicionar">
+          <button mat-mini-fab (click)="onAdd()" color="primary" aria-label="Adicionar Transferência">
+            <mat-icon>add</mat-icon>
+          </button>
+        </mat-header-cell>
+        <!--Body-->
+        <mat-cell *matCellDef="let agendados" class="icones">
+          <button mat-icon-button (click)="onEdit(agendados)" color="primary" aria-label="Editar Agendados">
+            <mat-icon>edit</mat-icon>
+          </button>
+
+          <button mat-icon-button color="warn" aria-label="Remover Agendados">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </mat-cell>
+
       </ng-container>
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

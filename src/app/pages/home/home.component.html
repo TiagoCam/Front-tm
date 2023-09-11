@@ -1,6 +1,6 @@
 <div class="grid-container">
-  <mat-toolbar color="primary">
-    <span>Dashboard</span>
+  <mat-toolbar style="background-color: #008568;">
+    <span style="color: white;">Dashboard</span>
   </mat-toolbar>
   <mat-grid-list cols="2" rowHeight="350px">
     <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
@@ -13,7 +13,6 @@
             </button>
             <mat-menu #menu="matMenu" xPosition="before">
               <button mat-menu-item>Expand</button>
-              <!-- <button mat-menu-item>Remove</button> -->
             </mat-menu>
           </mat-card-title>
         </mat-card-header>

@@ -1,7 +1,9 @@
 export interface Agendados {
-  contaOrigem: number;
-  contaDestino: number;
-  valor: number;
-  dtTrans: string;
+  _id: string;
+  contaOrigem: string;
+  contaDestino: string;
+  valor: string;
+  dtTransfer: string;
   dtAgenda: string;
+  valorTaxa: string;
 }

@@ -4,18 +4,16 @@ import { AgendarComponent } from './pages/agendar/agendar.component';
 import { AgendadosComponent } from './pages/agendados/agendados.component';
 import { HomeComponent } from './pages/home/home.component';
 
-
-
 const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'agendar', component: AgendarComponent},
-  {path: 'agendados', component: AgendadosComponent}
-
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'agendar', component: AgendarComponent },
+  { path: 'new', component: AgendarComponent },
+  { path: 'agendados', component: AgendadosComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
