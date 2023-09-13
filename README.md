@@ -2,9 +2,15 @@
 1.Esse teste não foram criado até o Final, pois travei ai retornar Data, bom acredito que teria ajuda de vcs, mais vou contar como eu seguiria no desenvolvimento 
 2.Se tivesse retornado a data na tabela, teria feito uma variavel DIAS recebendo a data da tranferencia - data de registro, teria feito uma const com os dados das % PORCENTAGEM e feito um CASE tratando os DIAS, e assim teria entregue, ficaria um bom sistema, entre e teste, obrigado
 
+Tela home, onde pode ter varios review(tela) ja filtada, como histórico do dia, do mês e todos.
 ![home](https://github.com/TiagoCam/Front-tm/assets/66811308/173e85a3-f784-4893-a9ef-46a6a6d12b86)
 
+
+Tela de agendar, com todos os campos necessário, ao cadastrar uma nova transação aparece promp " cadastro com sucesso ", e se o usuario não digitar os 6 digitos das contas " falha ao agendar "
 ![agenda](https://github.com/TiagoCam/Back-tm/assets/66811308/3775290a-ed83-4e7c-bf6b-ab5a6aee1549)
+
+
+Tela da Tabela com "adicionar" agendamento no canto superior direito.
 
 ![list](https://github.com/TiagoCam/Back-tm/assets/66811308/b205de0b-5022-4106-bcd8-e92dbd3d8425)
 
