@@ -1,4 +1,5 @@
 # Senhores quero resaltar
+
 1.Esse teste não foram criado até o Final, pois travei ai retornar Data, bom acredito que teria ajuda de vcs, mais vou contar como eu seguiria no desenvolvimento 
 2.Se tivesse retornado a data na tabela, teria feito uma variavel DIAS recebendo a data da tranferencia - data de registro, teria feito uma const com os dados das % PORCENTAGEM e feito um CASE tratando os DIAS, e assim teria entregue, ficaria um bom sistema, entre e teste, obrigado
 
