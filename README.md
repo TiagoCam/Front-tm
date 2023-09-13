@@ -1,3 +1,39 @@
+# Senhores quero resaltar
+1.Esse teste não foram criado até o Final, pois travei ai retornar Data, bom acredito que teria ajuda de vcs, mais vou contar como eu seguiria no desenvolvimento 
+2.Se tivesse retornado a data na tabela, teria feito uma variavel DIAS recebendo a data da tranferencia - data de registro, teria feito uma const com os dados das % PORCENTAGEM e feito um CASE tratando os DIAS, e assim teria entregue, ficaria um bom sistema, entre e teste, obrigado
+
+## Overview
+Esse repositório é o front-end da aplicação de cadastro financeiro -> https://github.com/TiagoCam/Front-tm/tree/main
+E essa é a API spring boot -> https://github.com/TiagoCam/Back-tm/tree/main
+
+## Guidelines front-end
+1. clonar o repositorio abrir em vc code ou outro de sua preferencia.
+2. executar o "npm install", para baixar as bibliotecas necessárias
+3. executar com comando "npm run start" p ser executado tbm a proxy do servidor.
+  
+4. # Observação executar o Back e o Front p fazer o teste
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # TransBank
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
